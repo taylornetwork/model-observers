@@ -22,11 +22,11 @@ class ModelObserverServiceProvider extends ServiceProvider
         $observerNamespace = config('model-observers.observer_namespace', 'App\\Observers');
         $modelNamespace = config('model-observers.model_namespace', 'App');
 
-        if($observerNamespace[0] !== '\\') {
+        if(last(str_split($observerNamespace)) !== '\\') {
         	$observerNamespace .= '\\';
         }
 
-        if($modelNamespace[0] !== '\\') {
+        if(last(str_split($modelNamespace)) !== '\\') {
         	$modelNamespace .= '\\';
         }
 
