@@ -1,0 +1,25 @@
+{
+    "name": "taylornetwork/model-observers",
+    "require": {
+        "illuminate/support": "5.*.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sam Taylor",
+            "email": "sam@taylornetwork.ca"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TaylorNetwork\\ModelObservers\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TaylorNetwork\\ModelObservers\\ModelObserverServiceProvider"
+            ]
+        }
+    }
+}
